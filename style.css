@@ -1,0 +1,48 @@
+nav {
+    background-color: tomato;
+}
+
+header {
+    background-color: rgb(190, 120, 14);
+}
+
+article {
+    background-color: rgb(7, 55, 87);
+    font-weight: 400;
+    text-align: justify;
+}
+
+aside {
+    background-color: palevioletred;
+}
+
+footer {
+    background-color: rgb(31, 15, 48);
+}
+
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+    border: 5px solid rgb(27, 27, 27);
+  }
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  }
+
+/* Large screens */
+@media all and (min-width: 800px) {
+    .main {
+        flex: 2 0px; 
+    }
+    .aside {
+        flex: 1 0px;
+    }
+}
